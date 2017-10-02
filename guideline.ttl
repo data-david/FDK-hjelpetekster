@@ -1,37 +1,53 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcatno: <http://difi.no/dcatno#> .
 @prefix : <http://brreg.no/fdk/fields#> .
 
-# Datasett.title
-:Dataset.title 
+# Dataset_title
+:Dataset_title  
     dct:abstract """Tittelen skal være kortfattet, kunne stå alene og gi mening. Organisasjonens navn trenger ikke å være med. Tittelen skal gjenspeile avgrensninger dersom datasettet er avgrenset i populasjonen. Forkortelser skal skrives helt ut."""@no ;
     dct:description """Datasettet har en tittel slik at det bl.a. kan vises i lister. Tittel er et obligatorisk felt.
-<ul>
-<li>Tittelen skal være kortfattet, kunne stå alene og gi mening.</li>
-<li>Organisasjonens navn trenger ikke å være med, med mindre det er spesielt relevant for datasettets innholdsmessige utvalg.</li>
-<li>Tittelen skal gjenspeile avgrensninger dersom datasettet er avgrenset i populasjonen - populasjonen er avgrenset av geografi eller formål, f.eks. “... med støtte i Lånekassen”, “... i Oslo”, “ Folketellingen av 1910”</li>
-<li>Der populasjonen ikke er avgrenset angis IKKE dette (f.eks. valgkrets)</li>
-<li>Forkortelser skal skrives helt ut (DTM10 erstattes av “Digital Terreng Modell 10m oppløsning (DTM10)” . Bruk eventuelt feltet for emneord til forkortelser. Målgruppen er personer som ønsker å finne relevante datasett raskt, unngå derfor interne navn eller forkortelser i tittel. I det offentlige opererer man ofte med flere titler eller navn på ting. Et datasett kan ha et offisielt navn, et kortnavn og en forkortelse. For eksempel: Datasettet “Administrative enheter i Norge” har ABAS som forkortelse. Det er sjelden man bruker den fulle tittelen, så for å gjøre et datasett mest mulig søkbart er det behov for at man kan registrere kortnavn, forkortelser og/eller alternative titler.</li>
-<li>Lov- eller forskriftshjemlede navn bør brukes i tittel (f.eks. Jegerregisteret)</li>
-</ul>"""@no .
+* Tittelen skal være kortfattet, kunne stå alene og gi mening.
+* Organisasjonens navn trenger ikke å være med, med mindre det er spesielt relevant for datasettets innholdsmessige utvalg.
+* Tittelen skal gjenspeile avgrensninger dersom datasettet er avgrenset i populasjonen - populasjonen er avgrenset av geografi eller formål, f.eks. “... med støtte i Lånekassen”, “... i Oslo”, “ Folketellingen av 1910”
+* Der populasjonen ikke er avgrenset angis IKKE dette (f.eks. valgkrets)
+* Forkortelser skal skrives helt ut (DTM10 erstattes av “Digital Terrengmodell 10m oppløsning (DTM10)”. Bruk eventuelt feltet for emneord til forkortelser. Målgruppen er personer som ønsker å finne relevante datasett raskt, unngå derfor interne navn eller forkortelser i tittel. I det offentlige opererer man ofte med flere titler eller navn på ting. Et datasett kan ha et offisielt navn, et kortnavn og en forkortelse. For eksempel: Datasettet “Administrative enheter i Norge” har ABAS som forkortelse. Det er sjelden man bruker den fulle tittelen, så for å gjøre et datasett mest mulig søkbart er det behov for at man kan registrere kortnavn, forkortelser og/eller alternative titler.
+* Lov- eller forskriftshjemlede navn bør brukes i tittel (f.eks. Jegerregisteret)"""@no .
 
 
-# Dataset.beskrivelse
-:Dataset.description
-  dct:abstract """Beskrivelsen skal være kortfattet. Hensikten med datasettet bør komme fram. Hvilke opplysninger som utgjør kjernen i datasettet bør angis. Bruk folkelige ord. Beskriv avgrensninger, hva dataettet ikke inneholder. Begrens lenker og markup."""@no ;
-  dct:description """En kort og presis beskrivelse av datasettet skal gjøre det lett for andre å se hva det inneholder. Beskrivelse er et obligatorisk felt.
-<ul>
-<li>Beskrivelsen skal være kortfattet slik at lister over datasett forståes ved å lese de første linjene.</li>
-<li>Hensikten med datasettet bør komme fram (f.eks. “Løsøreregisteret inneholder tinglyste flyttbare eiendeler”). For datasett som er omfattet av Personopplysningsloven, skal behandlingsformålet beskrives.</li>
-<li>Beskriv hva datasettet inneholder. Hvilke opplysninger som utgjør kjernen i datasettet bør angis.</li>
-<li>Feltinnhold skal ikke listes, men listes i emneord eller begreper.</li>
-<li>Beskrivelsen er ikke en gjentakelse av tittel</li>
-<li>Bruk folkelige ord (f.eks.”Løsøre” må forklares. F.eks. “flyttbare eiendeler (Løsøre)”, ev. bare folkelige uttrykk mens faguttrykket tas med som stikkord slik at det gir treff i søk)</li>
-<li>Beskriv avgrensninger, hva datasettet ikke inneholder, dersom dette kan misforstås ut fra tittelen.</li>
-<li>Begrens lenker og markup (formatering) i teksten. Skal man angi språk må teksten formelt sett være fri for lenker og formatering (HTML).</li>
-<li>Der målform er kjent skal "nb" eller "nn" brukes, "no" brukes ellers.</li>
-</ul>"""@no .
+# Dataset_description
+:Dataset_description
+	dct:abstract """Beskrivelsen skal være kortfattet. Hensikten med datasettet bør komme fram. Hvilke opplysninger som utgjør kjernen i datasettet bør angis. Bruk folkelige ord. Beskriv avgrensninger, hva dataettet ikke inneholder. Begrens lenker og markup."""@no ;
+	dct:description """En kort og presis beskrivelse av datasettet skal gjøre det lett for andre å se hva det inneholder. Beskrivelse er et obligatorisk felt.
+* Beskrivelsen skal være kortfattet slik at lister over datasett forståes ved å lese de første linjene.
+* Hensikten med datasettet bør komme fram (f.eks. “Løsøreregisteret inneholder tinglyste flyttbare eiendeler”). For datasett som er omfattet av Personopplysningsloven, skal behandlingsformålet beskrives.
+* Beskriv hva datasettet inneholder. Hvilke opplysninger som utgjør kjernen i datasettet bør angis.
+* Feltinnhold skal ikke listes, men listes i emneord eller begreper.
+* Beskrivelsen er ikke en gjentakelse av tittel
+* Bruk folkelige ord (f.eks.”Løsøre” må forklares. F.eks. “flyttbare eiendeler (Løsøre)”, ev. bare folkelige uttrykk mens faguttrykket tas med som stikkord slik at det gir treff i søk)
+* Beskriv avgrensninger, hva datasettet ikke inneholder, dersom dette kan misforstås ut fra tittelen.
+* Begrens lenker og markup (formatering) i teksten. Skal man angi språk må teksten formelt sett være fri for lenker og formatering (HTML).
+* Der målform er kjent skal "nb" eller "nn" brukes, "no" brukes ellers."""@no . 
+
+
+# Dataset_objective
+:Dataset_objective
+	dct:abstract """Beskrivelsen skal være kortfattet og ikke gjentas i Beskrivelsesfeltet."""@no ;
+	dct:description """En setnings-beskrivelse av formålet til datasettet.
+* Beskrivelsen skal være kortfattet og ikke gjentas i Beskrivelsesfeltet. 
+* Dersom datasettet inneholder personopplysninger skal behandlingsformålet for personopplysninger etter Personopplysningsloven beskrives her."""@no .
+
+
+# Dataset_spatial
+:Dataset_spatial
+	dct:abstract """Angi geografisk avgrensning dersom datasett kun har innhold fra visse områder. Referer til geografiske områder angitt med URI fra GeoNames"""@no ;
+	dct:description """Det er ønskelig å synliggjøre om datasettets utvalg er begrenset til bestemte geografiske områder.
+* Angi geografisk avgrensning dersom datasett kun har innhold fra visse områder. “Observert hekking av grågås i Oppdal” er datasettets geografiske omfang begrenset til kommunen Oppdal. 
+* Benytt eksisterende avgrensninger som kommuner, fylker m.v. 
+* Bør referere til geografiske områder angitt med URI-er (f.eks. Sentralt Stedsnavnsregister eller Administrative grenser fra Kartverket) 
+* Flere områder kan angis om relevant
+* Dersom det finnes en tilsvarende landsdekkende oversikt, bør dette beskrives som et separat datasett, og disse relateres. (se også “relasjoner mellom datasett”).  f.eks. Observert hekking av grågås i Norge"""@no .
+
