@@ -64,3 +64,7 @@
 * Det kan angis flere tidsperioder per datasett, men det anbefales at periodene ikke er overlappende.
 * Relativ avgrensning i tid fra tidspunkt for uttrekk (eksempelvis fra og med dato for forrige påbegynte semester og til og med avslutning av påfølgende semester)"""@no .
 
+# Dataset_identifier
+:Dataset_identifier
+	dct:abstract """"""@no ;
+	dct:description """"""@no .
