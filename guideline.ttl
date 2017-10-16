@@ -232,3 +232,15 @@ Dersom et datasett inneholder personopplysninger skal det være et grunnlag for 
     dct:description """En angivelse hvor ofte datasettet blir oppdatert. 
 * Beskriv hvor ofte datasettet har nytt innhold. For eksempel oppdateres Enhetsregisteret med nye enheter og sletting av enheter kontinuerlig, mens Inntektsdata fra likningen (Skattemelding) er årlig og Folketelling fra 1910 oppdateres aldri."""@no .
 
+# Dataset_hasQualityAnnotation_accuracy (nøyaktighet)
+:Dataset_hasQualityAnnotation_accuracy
+    dct:abstract """I hvilken grad er innholdet i samsvar med formålet."""@no ;
+    dct:description """I hvilken grad datasettet korrekt representerer intensjonen som er angitt av dataeier i formålet
+Nøyaktighet skal tolkes i forhold til formålet. 
+"""@no .
+
+# Dataset_hasQualityAnnotation_completeness (kompletthet)
+:Dataset_hasQualityAnnotation_completeness
+    dct:abstract """I hvilken grad inneholder datasettet alle objekter som nevnt i formålet"""@no ;
+    dct:description """I hvilken grad inneholder datasettet forventede opplysninger
+Kompletthet tolkes i forhold til formålet (utvalget)"""@no .
