@@ -243,4 +243,12 @@ Nøyaktighet skal tolkes i forhold til formålet.
 :Dataset_hasQualityAnnotation_completeness
     dct:abstract """I hvilken grad inneholder datasettet alle objekter som nevnt i formålet"""@no ;
     dct:description """I hvilken grad inneholder datasettet forventede opplysninger
-Kompletthet tolkes i forhold til formålet (utvalget)"""@no .
+* Kompletthet tolkes i forhold til formålet (utvalget)
+* Inneholder datasettet de objekter som nevnt i formålet? """@no .
+
+
+# Dataset_hasQualityAnnotation_currentness (aktualitet)
+:Dataset_hasQualityAnnotation_currentness
+    dct:abstract """Avvik eller tilleggsopplysninger om “oppdateringsfrekvens” og “sist oppdatert”"""@no ;
+    dct:description """Avvik eller tilleggsopplysninger om “oppdateringsfrekvens” og “sist oppdatert” 
+Er opplysninger om “oppdateringsfrekvens” og “sist oppdatert” alltid gyldig? Er det opplysninger i datasettet som har annen oppdateringsfrekvens?"""@no .
