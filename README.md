@@ -1,1 +1,1 @@
-# FDK-hjelpetekster
+# FDK-hjelpetekster til registreringsløsning
