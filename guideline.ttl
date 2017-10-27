@@ -435,18 +435,18 @@ Det skal angis distribusjonens type
 
 # Distribusjon (i samsvar med)
 :Distribution_conformsTo
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Benyttes for å angi et etablert skjema som distribusjonen er i samsvar med, for eksempel et XSD-dokument."""@no ;
+    dct:description """Benyttes for å angi et etablert skjema som distribusjonen er i samsvar med, for eksempel et XSD-dokument."""@no .
 
 # Distribusjon (dokumentasjon)
 :Distribution_documentation
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Referanse til en side eller et dokument som beskriver og dokumenterer innhold og struktur spesifikk for distribusjonen."""@no ;
+    dct:description """Referanse til en side eller et dokument som beskriver og dokumenterer innhold og struktur spesifikk for distribusjonen."""@no .
 
 # Distribusjon (distribusjonsdato)
 :Distribution_issued
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Dato/tid når distribusjonen (f.eks. api) først ble publisert i tilknytning til et datasett."""@no ;
+    dct:description """Dato/tid når distribusjonen (f.eks. api) først ble publisert i tilknytning til et datasett. Når innholdet i datasettene ble gjort tilgjengelige. """@no .
     
 # Distribusjon (modifisert)
 :Distribution_modified
