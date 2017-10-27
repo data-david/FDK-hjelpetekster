@@ -303,4 +303,150 @@ Er opplysninger om “oppdateringsfrekvens” og “sist oppdatert” alltid gyl
 * Et datasett som er avledet fra et annet skal ha en referanse til kilde for det aktuelle datasettet. 
 * Dersom det er et utvalg fra et annet datasett bør heller relasjonen del av brukes"""@no .
 
+# Dataset_ (testdatasett)
+:Dataeset_testdata
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
 
+# Dataset_ (krever)
+:Dataset_requires
+    dct:abstract """"""@no ;
+    dct:description """"""@no .    
+
+# Dataset_ (del av)
+:Dataset_partOf
+    dct:abstract """"""@no ;
+    dct:description """"""@no .   
+
+# Dataset_ (versjon av)
+:Dataset_versionOf
+    dct:abstract """"""@no ;
+    dct:description """"""@no .   
+
+# Dataset_ (erstattet av)
+:Dataset_replacedBy
+    dct:abstract """"""@no ;
+    dct:description """"""@no .  
+
+# Dataset_ (relatert)
+:Dataset_relation
+    dct:abstract """"""@no ;
+    dct:description """"""@no .  
+
+
+# Agent_name (Enhet enhetsnavn)
+:Agent_name
+    dct:abstract """"""@no ;
+    dct:description """"""@no .  
+
+# Agent_identifier (Enhet organisasjonsnummer)
+:Agent_identifier
+    dct:abstract """"""@no ;
+    dct:description """"""@no .  
+
+# Agent_type (Enhet utgivertype)
+:Agent_type
+    dct:abstract """"""@no ;
+    dct:description """"""@no .  
+
+
+# ContactPoint organization(Kontaktpunkt organisasjonsenhet)
+:ContactPoint_organizational-unit 
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+:ContactPoint_hasEmail
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+:ContactPoint_hasTelephone
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+:ContactPoint_hasURL
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+
+
+# Distribution description (beskrivelse)
+:Distribution_description 
+    dct:abstract """"""@no ;
+    dct:description """"""@no .    
+
+# Distribusjon_type (distribusjonstype)
+:Distribution_type
+    dct:abstract """"""@no ;
+    dct:description """"""@no .    
+
+# Distribusjon_format (format)
+:Distribution_format
+    dct:abstract """"""@no ;
+    dct:description """"""@no .    
+
+# Distribusjon_accessURL (tilgangsurl)
+:Distribution_accessURL
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+# Distribusjon_downloadURL (nedlastingslenke)
+:Distribution_downloadURL
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+# Distribusjon_landingpage (landingsside)
+:Distribution_landingpage
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+# Distribusjon (i samsvar med)
+:Distribution_conformsTo
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+# Distribusjon (dokumentasjon)
+:Distribution_documentation
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+# Distribusjon (distribusjonsdato)
+:Distribution_issued
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+# Distribusjon (modifisert)
+:Distribution_modified
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+
+# Katalog (tittel)
+:Catalog_title
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+# Katalog (beskrivelse)
+:Catalog_description
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+# Katalog (datasett)
+:Catatlog_dataset
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+# Katalog (eier)
+:Catalog_publisher
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
+# Katalog (utgivelsesdato)
+:Catalog_issued
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+
+# Katalog (modifisert)
+:Catalog_modified
+    dct:abstract """"""@no ;
+    dct:description """"""@no .
+    
