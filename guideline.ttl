@@ -252,3 +252,44 @@ Nøyaktighet skal tolkes i forhold til formålet.
     dct:abstract """Avvik eller tilleggsopplysninger om “oppdateringsfrekvens” og “sist oppdatert”"""@no ;
     dct:description """Avvik eller tilleggsopplysninger om “oppdateringsfrekvens” og “sist oppdatert” 
 Er opplysninger om “oppdateringsfrekvens” og “sist oppdatert” alltid gyldig? Er det opplysninger i datasettet som har annen oppdateringsfrekvens?"""@no .
+
+
+# Dataset_hasQualityAnnotation_avaliability (tilgjengelighet)
+:Dataset_hasQualityAnnotation_availability
+    dct:abstract """Avvik eller tilleggsopplysninger knyttet til datasettes tilgjengelighet."""@no ;
+    dct:description """Avvik eller tilleggsopplysninger knyttet til datasettets tilgjengelighet
+* Tilgjengelighet tolkes i forhold til tilgangsnivå og ev. begrensninger utover det som er angitt i behandlingsgrunnlag, skjermings- og utleveringshjemmel.
+* Dersom datasettet er åpent men mangler distribusjoner bør årsaken angis her.
+"""@no .
+
+
+# Dataset_hasQualityAnnotation_relevance (relevans)
+:Dataset_hasQualityAnnotation_relevance
+    dct:abstract """Avvik eller tilleggsopplysninger knyttet til datasettes relevans i ulike brukskontekster
+"""@no ;
+    dct:description """Avvik eller tilleggsopplysninger knyttet til datasettes relevans i ulike brukskontekster
+* En vurdering om det er bruksområder datasettet er spesielt velegnet eller ikke bør brukes."""@no .
+    
+    
+# Dataset_distribution (datasettdistribusjon)
+:Dataset_distribution 
+    dct:abstract """For å angi hvor man kan få tilgang til datasettet skal det angis ulike distribusjoner."""@no ;
+    dct:description """For å angi hvor man kan få tilgang til datasettet skal det angis ulike distribusjoner.
+* Det angis i utgangspunktet en distribusjon per fil, feed eller API
+* Dersom det er ett API som leverer flere filformater angis det som en distribusjon"""@no .
+
+
+# Dataset_example (eksempeldata)
+:Dataset_example
+    dct:abstract """Benyttes for å gi eksempeldata for et datasett, og hvordan en faktisk distribusjon ser ut.
+"""@no ;
+    dct:description """Benyttes for å gi eksempeldata for et datasett, og hvordan en faktisk distribusjon ser ut.
+ * Dersom datasettet inneholder personopplysninger vil det være nyttig for bruker å se en eksempedata som viser en anonymisert rad i datasettet."""@no .
+ 
+# Dataset_type (type)
+:Dataset_type
+    dct:abstract """Referanse til en klassifisering av datasettets type innhold. Refererer til EU publication office sine datasett typer"""@no ;
+    dct:description """Referanse til en klassifisering av datasettets type innhold. Refererer til EU publication office sine datasett typer.
+* Datasett som anses som å inneholde data angis med “Data”
+* Datasett som anses som metadata (f.eks. Kodelister, Taksonomier og Tesauri) skal angis tilsvarende
+* Datasett som anses som testdata angis som “Testdata”"""@no .
