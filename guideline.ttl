@@ -303,101 +303,135 @@ Er opplysninger om “oppdateringsfrekvens” og “sist oppdatert” alltid gyl
 * Et datasett som er avledet fra et annet skal ha en referanse til kilde for det aktuelle datasettet. 
 * Dersom det er et utvalg fra et annet datasett bør heller relasjonen del av brukes"""@no .
 
-# Dataset_ (testdatasett)
+# Dataset_testdata (testdatasett)
 :Dataeset_testdata
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """For å angi at et register eller datasett foreligger som testdata, typisk syntetiske eller anonymiserte, angis dette med relasjonen testdatasett til et annet datasett. """@no ;
+    dct:description """For å angi at et register eller datasett foreligger som testdata, typisk syntetiske eller anonymiserte, angis dette med relasjonen testdatasett til et annet datasett. 
+* Peker til datasett som er består av testdata til det aktuelle datasettet"""@no .
 
-# Dataset_ (krever)
+# Dataset_requires (krever)
 :Dataset_requires
-    dct:abstract """"""@no ;
-    dct:description """"""@no .    
+    dct:abstract """Peker til en ressurs som må være tilstede for at datasettet skal kunne produseres."""@no ;
+    dct:description """Peker til en ressurs som må være tilstede for at datasettet skal kunne produseres.
+* Peker til ressurs (datasett eller annet) som aktuelt datasett er avhengig av"""@no .    
 
 # Dataset_ (del av)
 :Dataset_partOf
-    dct:abstract """"""@no ;
-    dct:description """"""@no .   
+    dct:abstract """Der registre oppdeles i mindre datasett skal relasjonen brukes."""@no ;
+    dct:description """Peker til et datasett som det aktuelle datasettet er en delmengde av av, eller at det er brutt opp i mindre datasett. 
+* Der registre oppdeles i mindre datasett skal relasjonen brukes. F.eks. er datasettet Underenheter er del av datasettet Enhetsregisteret."""@no .   
 
 # Dataset_ (versjon av)
 :Dataset_versionOf
-    dct:abstract """"""@no ;
-    dct:description """"""@no .   
+    dct:abstract """Referanse til et datasett som i prinsippet er det samme, men hvor innholdet er blitt oppdatert på bakgrunn av bedret datakvalitet e.l. """@no ;
+    dct:description """Peker til et datasett som det aktuelle datasettet er en versjon av.
+* I prinsippet det samme datasettet, men hvor innholdet er blitt oppdatert på bakgrunn av bedret datakvalitet e.l. 
+* Peker til en versjon av det aktuelle datasettet kan avledes (har versjon).
+* Det kan legges til en versjonskommentar til feltet"""@no .   
 
 # Dataset_ (erstattet av)
 :Dataset_replacedBy
-    dct:abstract """"""@no ;
-    dct:description """"""@no .  
+    dct:abstract """Peker til et datasett som erstatter et aktuelt datasettet."""@no ;
+    dct:description """Peker til et datasett som erstatter et aktuelt datasettet.
+* F.eks. kan et kodeverk erstattet av en nyere utgave."""@no .  
 
 # Dataset_ (relatert)
 :Dataset_relation
-    dct:abstract """"""@no ;
-    dct:description """"""@no .  
+    dct:abstract """Referanse til andre datasett som gir supplerende informasjon om innholdet, f.eks. et kodeverk."""@no ;
+    dct:description """En generell relasjon som peker til ressurser som er relatert til datasettet.
+
+Angi referanser til andre datasett som gir supplerende informasjon om innholdet. Kan f.eks. være å relatere til et kodeverk."""@no .  
 
 
 # Agent_name (Enhet enhetsnavn)
 :Agent_name
-    dct:abstract """"""@no ;
-    dct:description """"""@no .  
+    dct:abstract """Navnet på enheten benyttes i visninger"""@no ;
+    dct:description """Navnet på enheten benyttes i visninger"""@no .  
 
 # Agent_identifier (Enhet organisasjonsnummer)
 :Agent_identifier
-    dct:abstract """"""@no ;
-    dct:description """"""@no .  
+    dct:abstract """Enheter skal oppgis med organisasjonsnummer. """@no ;
+    dct:description """Enheter skal oppgis med organisasjonsnummer. """@no .  
 
 # Agent_type (Enhet utgivertype)
 :Agent_type
-    dct:abstract """"""@no ;
-    dct:description """"""@no .  
+    dct:abstract """Enheter angis med organisasjonstype for å skille mellom offentlige og private datasetteiere."""@no ;
+    dct:description """Enheter angis med organisasjonstype for å skille mellom offentlige og private datasetteiere."""@no .  
 
 
-# ContactPoint organization(Kontaktpunkt organisasjonsenhet)
+# ContactPoint organization (Kontaktpunkt organisasjonsenhet)
 :ContactPoint_organizational-unit 
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Kontaktpunkt angis med organisasjonsenhet
+Dette kan være navnet til en gruppe, avdeling, seksjon eller liknende i organisasjonen."""@no ;
+    dct:description """Kontaktpunkt angis med organisasjonsenhet
+Dette kan være navnet til en gruppe, avdeling, seksjon eller liknende i organisasjonen. """@no .
     
+# ContactPoint e-post (Kontaktpunkt e-post)
 :ContactPoint_hasEmail
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Angi e-postadresse for kontaktpunktet dersom dette er en ønsket kontaktform"""@no ;
+    dct:description """Angi e-postadresse for kontaktpunktet dersom dette er en ønsket kontaktform"""@no .
 
+# ContactPoint_hasTelephone (Kontakt telefon)
 :ContactPoint_hasTelephone
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Angi telefonnummer for kontaktpunktet dersom dette er en ønsket kontaktform"""@no ;
+    dct:description """Angi telefonnummer for kontaktpunktet dersom dette er en ønsket kontaktform"""@no .
     
-:ContactPoint_hasURL
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+# ContactPoint_hasURL (Kontakt kontaktskjema)
+:ContactPoint_hasURL 
+    dct:abstract """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform"""@no ;
+    dct:description """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform"""@no .
 
 
 
 # Distribution description (beskrivelse)
 :Distribution_description 
     dct:abstract """"""@no ;
-    dct:description """"""@no .    
+    dct:description """Beskrivelse skal uttrykke de ulike distribusjonene
+* Er det kun en distribusjon kan beskrivelsen utelates
+* Ved flere distribusjoner bør beskrivelsen benyttes for å skille dem
+* Dersom det er et utsnitt spesifikt for distribusjonen/formål til distribusjonen benyttes beskrivelse
+"""@no .    
 
 # Distribusjon_type (distribusjonstype)
 :Distribution_type
-    dct:abstract """"""@no ;
-    dct:description """"""@no .    
+    dct:abstract """En distribusjon kan bli levert på ulike vis
+* Angi distribusjonens type (Nedlastbar fil, API, Feed)"""@no ;
+    dct:description """En distribusjon kan bli levert på ulike vis
+
+Det skal angis distribusjonens type 
+* Bruk Nedlastbar fil dersom hele distribusjonen kan hentes ned
+* Bruk API dersom deler av datasettet lastes ned gjennom et programmeringsgrensesnitt, typisk REST-API
+* Bruk Feed dersom det i prinsippet er endringer som hentes gjennom f.eks. RSS, Atom eller medlingsformidling 
+* Se EU publication office (http://publications.europa.eu/mdr/resource/authority/distribution-type/html/distribution-types-eng.html)"""@no .    
 
 # Distribusjon_format (format)
 :Distribution_format
-    dct:abstract """"""@no ;
-    dct:description """"""@no .    
+    dct:abstract """Hver distribusjon har format for utveksling. Format er et obligatorisk felt for en distribusjon."""@no ;
+    dct:description """Hver distribusjon har format for utveksling. Format er et obligatorisk felt for en distribusjon.
+* Det skal angis mediatype (e.g. application/json) fra (https://www.iana.org/assignments/media-types/media-types.xhtml)
+* Det kan angis mediatyper utover denne listen, f.eks. “application/x.sosi” 
+* Flere formater skal kun brukes når et og samme API eller sluttbrukerapplikasjoner som tilbyr flere formater"""@no .    
 
 # Distribusjon_accessURL (tilgangsurl)
 :Distribution_accessURL
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Lenke til utfyllende informasjon om hvordan en kan få tilgang til i datasettet."""@no ;
+    dct:description """Lenke til informasjon om hvordan en kan få tilgang til i datasettet. TilgangsURL er et obligatorisk felt.
+* bør i så stor grad som mulig peke direkte til en distribusjon av data. 
+* skal benyttes for tjenesteendepunkter eller lenke til filnedlasting.
+* kan peke til en nettside med informasjon om hvordan man får tilgang til distribusjonen."""@no .
 
 # Distribusjon_downloadURL (nedlastingslenke)
 :Distribution_downloadURL
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
-    
+    dct:abstract """Direktelenke til en nedlastbar fil i et gitt format"""@no ;
+    dct:description """Direktelenke til en nedlastbar fil i et gitt format
+* kan benyttes dersom alle data tilgjengelig via en tjeneste også er tilgjengelig for nedlasting som en fil."""@no .
+
 # Distribusjon_landingpage (landingsside)
 :Distribution_landingpage
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Refererer til en nettside som gir tilgang til datasettet, distribusjoner og annen informasjon. """@no ;
+    dct:description """Egenskap ved datasett som refererer til en nettside som gir tilgang til datasettet, distribusjoner og annen informasjon. Skal peke til en side hos den originale tilbyderen av data.
+* kan benyttes for å peke til en samleside om et datasett og dets distribusjoner.
+* bør peke til en side hos den originale tilbyderen av data."""@no .
 
 # Distribusjon (i samsvar med)
 :Distribution_conformsTo
