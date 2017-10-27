@@ -450,37 +450,42 @@ Det skal angis distribusjonens type
     
 # Distribusjon (modifisert)
 :Distribution_modified
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """DDato/tid sist distribusjonen (API-et, filen eller feeden) sist ble endret."""@no ;
+    dct:description """Dato/tid sist distribusjonen (API-et, filen eller feeden) sist ble endret."""@no .
 
 
 # Katalog (tittel)
 :Catalog_title
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Kortfattet om katalogen. Angi, uten å liste, hvilke datasett den omfatter."""@no ;
+    dct:description """Kortfattet om katalogen
+* Angi, uten å liste, hvilke datasett den omfatter, 
+* f.eks. datasettene til Brønnøysundregistrene."""@no .
     
 # Katalog (beskrivelse)
 :Catalog_description
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """En kort og presis beskrivelse av datasettet skal gjøre det lett for andre å se hva det inneholder. Beskrivelse er et obligatorisk felt."""@no ;
+    dct:description """En kort og presis beskrivelse av datasettet skal gjøre det lett for andre å se hva det inneholder. Beskrivelse er et obligatorisk felt."""@no .
     
 # Katalog (datasett)
 :Catatlog_dataset
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Beskriver datasettene i katalogen. Minst ett datasett er påkrevd."""@no ;
+    dct:description """Beskriver datasettene i katalogen. Minst ett datasett er påkrevd.
+* Lenke til alle datasettene"""@no .
 
 # Katalog (eier)
 :Catalog_publisher
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Identifisering av den enheten som er ansvarlig for katalogen."""@no ;
+    dct:description """Identifisering av den enheten som er ansvarlig for katalogen. Eier er et obligatorisk felt.
+* Skal peke på en Enhet (juridisk person, organisasjonsledd, underenhet)
+* Det offisielle navnet på virksomheten vil hentes fra Enhetsregisteret, men kortform (f.eks. Difi) kan legges inn av brukeren"""@no .
     
 # Katalog (utgivelsesdato)
 :Catalog_issued
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Dato/tid katalogen først ble publisert."""@no ;
+    dct:description """Dato/tid katalogen først ble publisert."""@no .
 
 # Katalog (modifisert)
 :Catalog_modified
-    dct:abstract """"""@no ;
-    dct:description """"""@no .
+    dct:abstract """Dato/tid sist katalogen ble endret,. Dette kan være endring av en datasettbeskrivelse, eller andre metadata i katalogen."""@no ;
+    dct:description """Dato/tid sist katalogen ble endret,. Dette kan være endring av en datasettbeskrivelse, eller andre metadata i katalogen."""@no .
     
