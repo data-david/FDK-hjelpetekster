@@ -393,7 +393,25 @@ Dette kan være navnet til en gruppe, avdeling, seksjon eller liknende i organis
 
 # Distribution description (beskrivelse)
 :Distribution_description 
-    dct:abstract """"""@no ;
+    dct:abstract """    dct:abstract """Angi e-postadresse for kontaktpunktet dersom dette er en ønsket kontaktform"""@no ;
+    dct:description """Angi e-postadresse for kontaktpunktet dersom dette er en ønsket kontaktform"""@no .
+
+# ContactPoint_hasTelephone (Kontakt telefon)
+:ContactPoint_hasTelephone
+    dct:abstract """Angi telefonnummer for kontaktpunktet dersom dette er en ønsket kontaktform"""@no ;
+    dct:description """Angi telefonnummer for kontaktpunktet dersom dette er en ønsket kontaktform"""@no .
+    
+# ContactPoint_hasURL (Kontakt kontaktskjema)
+:ContactPoint_hasURL 
+    dct:abstract """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform"""@no ;
+    dct:description """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform
+* Hvis det finnes et web-basert kontaktskjema bør dette benyttes"""@no .
+
+
+
+# Distribution description (beskrivelse)
+:Distribution_description 
+    dct:abstract """Kort beskrivelse av distribusjonen som skiller dem fra hverandre dersom der er flere."""@no ;
     dct:description """Beskrivelse skal uttrykke de ulike distribusjonene
 * Er det kun en distribusjon kan beskrivelsen utelates
 * Ved flere distribusjoner bør beskrivelsen benyttes for å skille dem
