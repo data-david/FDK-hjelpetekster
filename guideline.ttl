@@ -335,12 +335,19 @@ Er opplysninger om “oppdateringsfrekvens” og “sist oppdatert” alltid gyl
     dct:description """Peker til et datasett som erstatter et aktuelt datasettet.
 * F.eks. kan et kodeverk erstattet av en nyere utgave."""@no .  
 
+# Dataset (refererer til)
+:Dataset_refersTo
+	dct:abstract """Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på."""@no;
+dct:description """Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
+Peker til datasett som kan være aktuelt å se i sammenheng med det aktuelle datasettet, f.eks. for Enhetsregisteret supplerende informasjon om Enheter, men ikke direkte relatert
+"""@no.
+
 # Dataset_ (relatert)
 :Dataset_relation
-    dct:abstract """Referanse til andre datasett som gir supplerende informasjon om innholdet, f.eks. et kodeverk."""@no ;
+    dct:abstract """Referanse til andre datasett som gir supplerende informasjon om innholdet."""@no ;
     dct:description """En generell relasjon som peker til ressurser som er relatert til datasettet.
 
-Angi referanser til andre datasett som gir supplerende informasjon om innholdet. Kan f.eks. være å relatere til et kodeverk."""@no .  
+Angi referanser til andre datasett som gir supplerende informasjon om innholdet. Kan f.eks. være å relatere til et annet register."""@no .  
 
 
 # Agent_name (Enhet enhetsnavn)
