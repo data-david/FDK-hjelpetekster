@@ -420,8 +420,7 @@ Dette kan være navnet til en gruppe, avdeling, seksjon eller liknende i organis
 
 # Distribusjon_type (distribusjonstype)
 :Distribution_type
-    dct:abstract """En distribusjon kan bli levert på ulike vis
-* Angi distribusjonens type (Nedlastbar fil, API, Feed)"""@no ;
+    dct:abstract """En distribusjon kan bli levert på ulike vis. Angi distribusjonens type (Nedlastbar fil, API, Feed)"""@no ;
     dct:description """En distribusjon kan bli levert på ulike vis
 
 Det skal angis distribusjonens type 
