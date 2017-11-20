@@ -386,7 +386,8 @@ Dette kan være navnet til en gruppe, avdeling, seksjon eller liknende i organis
 # ContactPoint_hasURL (Kontakt kontaktskjema)
 :ContactPoint_hasURL 
     dct:abstract """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform"""@no ;
-    dct:description """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform"""@no .
+    dct:description """Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform
+* Hvis det finnes et web-basert kontaktskjema bør dette benyttes"""@no .
 
 
 
